@@ -2,9 +2,9 @@
   font-family: "Angst";
   font-style: normal;
   font-weight: 700;
-  src: local("Angst"), url("/fonts/Angst-BoldSerif.woff2") format("woff2"),
-    url("/fonts/Angst-BoldSerif.woff") format("woff"),
-    url("/fonts/Angst-BoldSerif.otf") format("otf");
+  src: local("Angst"), url("../fonts/Angst-BoldSerif.woff2") format("woff2"),
+    url("../fonts/Angst-BoldSerif.woff") format("woff"),
+    url("../fonts/Angst-BoldSerif.otf") format("otf");
 }
 
 :root {
