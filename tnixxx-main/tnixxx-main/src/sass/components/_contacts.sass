@@ -1,0 +1,53 @@
+.contact
+    &s-block
+        max-width: 320px
+        margin-right: auto
+        margin-left: auto
+        padding: 25px 0 90px
+        &__modal
+            margin-right: 0
+            margin-left: 6px
+        & a
+            font-size: 23px
+    &s-container
+        text-align: center  
+    &-item
+        transition: 0.3s
+        & svg
+            transition: 0.3s
+            margin-right: 15px
+        &:hover
+            transition: 0.3s
+            .svg
+                &-circle
+                    fill: $red
+                &-tg
+                    fill: $white
+                &-email
+                    stroke: $white
+                &-vimeo
+                    fill: $white
+    &s
+        padding-top: 100px
+        background-image: url('../img/detail.png')
+        background-repeat: repeat-x
+        background-position-y: 0px  
+        background-position-x: center
+        background-size: 170px
+.svg
+    &-circle
+        transition: 0.3s
+    &-tg
+        transition: 0.3s
+    &-vimeo
+        transition: 0.3s
+    &-email
+        transition: 0.3s
+        &__m
+            transition: 0.3s
+
+
+@media   ( max-width: 576px )
+    .contacts-block
+        & a
+            font-size: 18px

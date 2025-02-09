@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <title>TNIX.XX | Видеограф Тюмень</title>
+</head>
+<body>
+    <video id="background-video" autoplay loop muted>
+        <source src="video/hero-bg.mp4" type="video/mp4">
+    </video>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <nav class="header-navbar">
+                    <!-- <a href="#" class="header-navbar__item">Главная</a> -->
+                    <a onclick="slowScroll('#about')" href="#about" class="header-navbar__item">Обо мне</a>
+                    <a onclick="slowScroll('#portfolio')" href="#portfolio" class="header-navbar__item">Портфолио</a>
+                    <a onclick="slowScroll('#contacts')" href="#contacts" class="header-navbar__item">Контакты</a>
+                </nav>
+                <a href="#" class="header-btn btn btn-white" type="button" data-toggle="modal" data-target="#mainModal">Заказать видео</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-container container">
+                <div class="hero-block"><h3 class="hero-block-title">Видео, которые смотрят</h3></div>
+                <div  class="hero-arrow">
+                    <a onclick="slowScroll('#about')" href="#about"><img src="img/hero/arrow.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-block row justify-content-center">
+                    <div class="col-xl-6 col-md-12 col-12">
+                        <span class="about-title__badge">@tnix.xx</span>
+                        <h3 class="about-title section-title">Обо мне</h3>
+                        <p class="about-text">Занимаюсь съемкой видео с 2019 года, за это время подержал множество камер и принял участие в самых разных проектах. 
+                            Начинал свой путь с режиссёра монтажа локального видео «Орел и Решка» — моя первая работа набрала 12 тыс. просмотров. На этом я не останавливаюсь и продолжаю заниматься любимым делом.</p>
+                    </div>
+                    <div class="about-img-block col-xl-6 col-md-12 col-12">
+                        <img src="img/about/about-pic.jpg" alt="my photo" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="container">
+                <div class="portfolio-block">
+                    <h3 class="portfolio-title section-title">Портфолио</h3>
+                    <div class="row portfolio-container">
+                        <div class="col-12 col-md-4 portfolio-item">
+                            <a href="https://t.me/tnixxxz/8">
+                                <img src="img/portfolio/ushakov.jpg" alt="portfolio image">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-8 portfolio-item">
+                            <div class="polit-kitchen">
+                                <a href="https://t.me/tnixxxz/9">
+                                    <img src="img/portfolio/polit_kitchen.jpg" alt="portfolio image">
+                                </a>    
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 portfolio-item__sm">
+                                    <a href="https://t.me/tnixxxz/7">
+                                        <img src="img/portfolio/neon_breakfast.jpg" alt="portfolio image">
+                                    </a>
+                                </div>
+                                <!-- <div class="col-12 col-md-6 portfolio-item__sm">
+                                    <a href="https://t.me/tnixxxz/7">
+                                        <img src="img/portfolio/neon_breakfast.jpg" alt="portfolio image">
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <a class="portfolio-offer" href="https://t.me/tnixxxz">Посмотреть ещё</a>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="contacts">
+            <div class="container contacts-container">
+                <span class="text-center section-title">Контакты</span>
+                <div class="contacts-block flex-column">
+                    <a href="https://t.me/tnixxx" class="contact-item d-flex align-items-center">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="svg-circle" d="M15 0C6.71572 0 0 6.71572 0 15C0 23.2843 6.71572 30 15 30C23.2843 30 30 23.2843 30 15C30 6.71572 23.2843 0 15 0ZM22.7964 9.48844L20.1323 22.207C20.1001 22.3609 20.0297 22.5041 19.9276 22.6237C19.8256 22.7432 19.6951 22.8352 19.5483 22.8911C19.4014 22.9471 19.2428 22.9653 19.0871 22.9439C18.9314 22.9226 18.7835 22.8625 18.6571 22.7691L14.7819 19.9062L12.4342 22.121C12.4034 22.15 12.3673 22.1726 12.3277 22.1874C12.2881 22.2023 12.246 22.2091 12.2038 22.2075C12.1616 22.2059 12.1201 22.1959 12.0818 22.1781C12.0435 22.1603 12.0091 22.135 11.9807 22.1038L11.9302 22.0484L12.3381 18.1006L19.6907 11.3828C19.7271 11.3496 19.7497 11.304 19.7541 11.255C19.7585 11.206 19.7444 11.1571 19.7145 11.118C19.6846 11.0789 19.6412 11.0524 19.5927 11.0437C19.5443 11.0351 19.4943 11.0449 19.4528 11.0712L10.0497 17.0226L6 15.6625C5.89232 15.6263 5.79847 15.5577 5.73133 15.4661C5.66419 15.3745 5.62704 15.2643 5.62499 15.1508C5.62293 15.0372 5.65607 14.9258 5.71986 14.8318C5.78364 14.7378 5.87495 14.6658 5.98125 14.6258L21.8262 8.65688C21.9484 8.61088 22.0807 8.59856 22.2094 8.62121C22.338 8.64386 22.4581 8.70065 22.5573 8.78564C22.6565 8.87062 22.731 8.98068 22.773 9.10431C22.8151 9.22795 22.8232 9.36061 22.7964 9.48844Z" fill="white"/>
+                            <path class="svg-tg" d="M22.7964 9.48844L20.1323 22.207C20.1001 22.3609 20.0297 22.5041 19.9276 22.6237C19.8256 22.7432 19.6951 22.8352 19.5483 22.8911C19.4014 22.9471 19.2428 22.9653 19.0871 22.9439C18.9314 22.9226 18.7835 22.8625 18.6571 22.7691L14.7819 19.9062L12.4342 22.121C12.4034 22.15 12.3673 22.1726 12.3277 22.1874C12.2881 22.2023 12.246 22.2091 12.2038 22.2075C12.1616 22.2059 12.1201 22.1959 12.0818 22.1781C12.0435 22.1603 12.0091 22.135 11.9807 22.1038L11.9302 22.0484L12.3381 18.1006L19.6907 11.3828C19.7271 11.3496 19.7497 11.304 19.7541 11.255C19.7585 11.206 19.7444 11.1571 19.7145 11.118C19.6846 11.0789 19.6412 11.0524 19.5927 11.0437C19.5443 11.0351 19.4943 11.0449 19.4528 11.0712L10.0497 17.0226L6 15.6625C5.89232 15.6263 5.79847 15.5577 5.73133 15.4661C5.66419 15.3745 5.62704 15.2643 5.62499 15.1508C5.62293 15.0372 5.65607 14.9258 5.71986 14.8318C5.78364 14.7378 5.87495 14.6658 5.98125 14.6258L21.8262 8.65688C21.9484 8.61088 22.0807 8.59856 22.2094 8.62121C22.338 8.64386 22.4581 8.70065 22.5573 8.78564C22.6565 8.87062 22.731 8.98068 22.773 9.10431C22.8151 9.22795 22.8232 9.36061 22.7964 9.48844Z" fill="black"/>
+                        </svg>                            
+                        <span class="contact-item__link">t.me/tnixxx
+                    </a>
+                    <a href="mailto:mail@tnixxx.ru" class="contact-item d-flex mt-2 align-items-center">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="svg-circle" cx="15" cy="15" r="15" fill="white"/>
+                            <path class="svg-email" d="M21.7626 21.6H8.235C6.99986 21.6 6 20.7038 6 19.5966V11.0034C6 9.89626 6.99986 9 8.235 9H21.7626C22.9978 9 23.9977 9.89626 23.9977 11.0034V19.5966C24.0565 20.7038 22.9978 21.6 21.7626 21.6Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path class="svg-email" d="M15 16L7 10" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="svg-email" d="M23 10L15 16" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                    
+                        <span class="contact-item__link">mail@tnixxx.ru
+                    </a>
+                    <!-- <a href="https://vimeo.com/tnixxx" class="contact-item d-flex mt-2 align-items-center">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="svg-circle" cx="15" cy="15" r="15" fill="white"/>
+                            <path class="svg-vimeo" d="M23.9942 10.7019C23.9085 12.5288 22.7089 14.9795 20.3096 18.0986C17.8676 21.3959 15.8111 23 14.0974 23C13.0691 23 12.1694 22.0197 11.4411 20.0146C10.9698 18.1877 10.4557 16.3608 9.98442 14.5339C9.42746 12.5288 8.8705 11.5486 8.27069 11.5486C8.14216 11.5486 7.67089 11.7713 6.85687 12.3506L6 11.3258C6.89971 10.5237 7.71373 9.94446 8.5706 9.14241C9.77021 8.07301 10.6271 7.53832 11.2269 7.49376C12.6407 7.36008 13.4976 8.34036 13.7975 10.4346C14.1402 12.7071 14.4401 13.9101 14.5687 14.4448C14.9542 16.3163 15.4255 17.2966 15.8968 17.2966C16.2824 17.2966 16.8393 16.6727 17.6105 15.4697C18.3817 14.222 18.7673 13.3309 18.8101 12.6625C18.9387 11.5931 18.5102 11.0584 17.6105 11.0584C17.1821 11.0584 16.7108 11.2812 16.2395 11.4594C17.1392 8.47404 18.853 6.9145 21.3379 7.00362C23.223 7.04818 24.0799 8.2958 23.9942 10.7019Z" fill="black"/>
+                        </svg>
+                        vimeo.com/tnixxx</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-wrapper">
+                <a href="index.html"><img src="img/logo.svg" style="opacity: 0.5;" alt="logo"></a>
+                <a href="politics.html" class="footer-link">Политика конфиденциальности</a>
+                <a class="btn btn-white" type="button" data-toggle="modal" data-target="#mainModal">Заказать видео</a>
+            </div>
+        </div>
+    </footer>
+
+
+        <!-- Modal -->
+    <div class="modal fade" id="mainModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xlg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                <div class="modal-container row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <h3 class="modal-title">Поговорим, обсудим всё, что необходимо</h3>
+                        <div class="contacts-block contacts-block__modal flex-column">
+                            <a href="https://t.me/tnixxx" class="contact-item d-flex align-items-center">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="svg-circle" d="M15 0C6.71572 0 0 6.71572 0 15C0 23.2843 6.71572 30 15 30C23.2843 30 30 23.2843 30 15C30 6.71572 23.2843 0 15 0ZM22.7964 9.48844L20.1323 22.207C20.1001 22.3609 20.0297 22.5041 19.9276 22.6237C19.8256 22.7432 19.6951 22.8352 19.5483 22.8911C19.4014 22.9471 19.2428 22.9653 19.0871 22.9439C18.9314 22.9226 18.7835 22.8625 18.6571 22.7691L14.7819 19.9062L12.4342 22.121C12.4034 22.15 12.3673 22.1726 12.3277 22.1874C12.2881 22.2023 12.246 22.2091 12.2038 22.2075C12.1616 22.2059 12.1201 22.1959 12.0818 22.1781C12.0435 22.1603 12.0091 22.135 11.9807 22.1038L11.9302 22.0484L12.3381 18.1006L19.6907 11.3828C19.7271 11.3496 19.7497 11.304 19.7541 11.255C19.7585 11.206 19.7444 11.1571 19.7145 11.118C19.6846 11.0789 19.6412 11.0524 19.5927 11.0437C19.5443 11.0351 19.4943 11.0449 19.4528 11.0712L10.0497 17.0226L6 15.6625C5.89232 15.6263 5.79847 15.5577 5.73133 15.4661C5.66419 15.3745 5.62704 15.2643 5.62499 15.1508C5.62293 15.0372 5.65607 14.9258 5.71986 14.8318C5.78364 14.7378 5.87495 14.6658 5.98125 14.6258L21.8262 8.65688C21.9484 8.61088 22.0807 8.59856 22.2094 8.62121C22.338 8.64386 22.4581 8.70065 22.5573 8.78564C22.6565 8.87062 22.731 8.98068 22.773 9.10431C22.8151 9.22795 22.8232 9.36061 22.7964 9.48844Z" fill="white"/>
+                                    <path class="svg-tg" d="M22.7964 9.48844L20.1323 22.207C20.1001 22.3609 20.0297 22.5041 19.9276 22.6237C19.8256 22.7432 19.6951 22.8352 19.5483 22.8911C19.4014 22.9471 19.2428 22.9653 19.0871 22.9439C18.9314 22.9226 18.7835 22.8625 18.6571 22.7691L14.7819 19.9062L12.4342 22.121C12.4034 22.15 12.3673 22.1726 12.3277 22.1874C12.2881 22.2023 12.246 22.2091 12.2038 22.2075C12.1616 22.2059 12.1201 22.1959 12.0818 22.1781C12.0435 22.1603 12.0091 22.135 11.9807 22.1038L11.9302 22.0484L12.3381 18.1006L19.6907 11.3828C19.7271 11.3496 19.7497 11.304 19.7541 11.255C19.7585 11.206 19.7444 11.1571 19.7145 11.118C19.6846 11.0789 19.6412 11.0524 19.5927 11.0437C19.5443 11.0351 19.4943 11.0449 19.4528 11.0712L10.0497 17.0226L6 15.6625C5.89232 15.6263 5.79847 15.5577 5.73133 15.4661C5.66419 15.3745 5.62704 15.2643 5.62499 15.1508C5.62293 15.0372 5.65607 14.9258 5.71986 14.8318C5.78364 14.7378 5.87495 14.6658 5.98125 14.6258L21.8262 8.65688C21.9484 8.61088 22.0807 8.59856 22.2094 8.62121C22.338 8.64386 22.4581 8.70065 22.5573 8.78564C22.6565 8.87062 22.731 8.98068 22.773 9.10431C22.8151 9.22795 22.8232 9.36061 22.7964 9.48844Z" fill="black"/>
+                                </svg>                            
+                                <span class="contact-item__link">t.me/tnixxx</a>
+                            </a>
+                            <a href="mailto:tnixxx@yandex.ru" class="contact-item d-flex mt-2 align-items-center">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="svg-circle" cx="15" cy="15" r="15" fill="white"/>
+                                    <path class="svg-email" d="M21.7626 21.6H8.235C6.99986 21.6 6 20.7038 6 19.5966V11.0034C6 9.89626 6.99986 9 8.235 9H21.7626C22.9978 9 23.9977 9.89626 23.9977 11.0034V19.5966C24.0565 20.7038 22.9978 21.6 21.7626 21.6Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path class="svg-email" d="M15 16L7 10" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path class="svg-email" d="M23 10L15 16" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                    
+                                <span class="contact-item__link">mail@tnixxx.ru</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <form method="post" action="" class="d-flex form-block flex-column">
+                                <input class="input form-text-input" required name="user_name" type="text" placeholder="Имя">
+                                <input class="input form-text-input" required name="user_messenger" type="text" placeholder="Telegram/другой мессенджер">
+                                <input class="input form-text-input" name="user_comment" type="text" placeholder="Комментарий (необязательно)">
+                                <div class="d-flex modal-form">
+                                    <input checked required type="checkbox" name="ready" id="modal-form_checkbox" class="modal-form__checkbox">
+                                    <label for="modal-form_checkbox" class="modal-form__text">Заполняя форму вы соглашаетесь с <a href="politics.html" class="modal-form__link">Политикой конфиденциальности</a></label>
+                                </div>
+                                <input type="submit" class="btn btn-white form-button" value="Отправить заявку">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

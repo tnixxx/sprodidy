@@ -1,0 +1,53 @@
+.hero-block-title {
+    width: 22ch;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid $white;
+    animation: flashing-border 0.75s step-end infinite, printed-text 2.5s steps(22);
+
+}
+.hero-arrow {
+    animation: arrow 3s ease-in-out infinite;
+}
+@keyframes flashing-border {
+    0%{
+        border-color: $white
+    }
+    50% {
+        border-color: transparent
+    }
+    100% {
+        border-color: $white
+    }
+}
+@keyframes printed-text {
+    from {
+        width: 0;
+    }
+
+}
+
+@keyframes arrow {
+    0% {
+        bottom: 19%
+    }
+    50% {
+        bottom: 20%
+    }
+    100% {
+        bottom: 19%
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-block-title {
+        animation: none;
+        white-space: normal !important;
+        font-family: sans-serif;
+        border: 0;
+        width: 100%;
+        overflow: visible;
+    }
+}
+
