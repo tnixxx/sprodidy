@@ -29,14 +29,13 @@ a {
   color: var(--orange) !important;
   text-decoration: none !important;
   font-size: 20px;
-  transition: 0.2s;
 }
 
 a:hover {
   color: white !important;
 }
-
-body::after {
+/* 
+body::before {
   animation: grain 8s steps(10) infinite;
   background-image: url("https://grainy-gradients.vercel.app/noise.svg");
   content: "";
@@ -46,7 +45,7 @@ body::after {
   top: -110%;
   opacity: 0.15;
   position: fixed;
-}
+} */
 
 @keyframes grain {
   0%,
