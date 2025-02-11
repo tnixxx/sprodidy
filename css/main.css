@@ -40,8 +40,8 @@ a {
 a:hover {
   color: white !important;
 }
-/* 
-body::before {
+
+body::after {
   animation: grain 8s steps(10) infinite;
   background-image: url("https://grainy-gradients.vercel.app/noise.svg");
   content: "";
@@ -51,7 +51,7 @@ body::before {
   top: -110%;
   opacity: 0.15;
   position: fixed;
-} */
+}
 
 @keyframes grain {
   0%,
@@ -112,7 +112,6 @@ header {
   width: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.9;
 }
 
 /* Hero */
@@ -189,7 +188,9 @@ header {
   text-align: center;
   color: var(--orange);
   font-size: 60px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
 }
 
 .performance-title {
