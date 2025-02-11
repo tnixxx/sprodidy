@@ -12,17 +12,17 @@ function slowScroll(id) {
 $(document).ready(function () {
   $(".slider__partners").slick({
     arrows: false,
-    draggable: true,
+    // draggable: false,
     infinite: true,
     centerMode: true,
-    easing: "ease",
+    // easing: "ease",
     slidesToShow: 5,
     slidesToScroll: 0,
     speed: 10000,
-    autoplay: true,
-    autoplaySpeed: 0,
+    // autoplay: true,
+    // autoplaySpeed: 0,
     cssEase: "linear",
-    swipe: true,
+    // swipe: true,
     responsive: [
       {
         breakpoint: 1700,
