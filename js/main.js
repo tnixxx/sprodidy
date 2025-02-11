@@ -12,64 +12,41 @@ function slowScroll(id) {
 $(document).ready(function () {
   $(".slider__partners").slick({
     arrows: false,
+    draggable: true,
     infinite: true,
     centerMode: true,
     easing: "ease",
     slidesToShow: 5,
-    slidesToScroll: 1,
-    centerMode: true,
+    slidesToScroll: 0,
     speed: 10000,
     autoplay: true,
     autoplaySpeed: 0,
     cssEase: "linear",
     swipe: true,
-    draggable: true,
+    responsive: [
+      {
+        breakpoint: 1700,
+        settings: {
+          slidesToShow: 4,
+        },
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 1,
+          speed: 100000,
+        },
+        breakpoint: 800,
+        settings: {
+          speed: 100000,
+          slidesToShow: 1,
+        },
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });
-
-$(document).ready(function () {
-  $(".slider__streaming").slick({
-    autoplay: true,
-
-    rtl: true,
-    arrows: false,
-    infinite: true,
-    easing: "ease",
-    slidesToShow: 16,
-    slidesToScroll: 1,
-    centerMode: true,
-    cssEase: "linear",
-    swipe: true,
-    draggable: true,
-  });
-});
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   document.addEventListener("hide.bs.modal", function (event) {
-//     if (document.activeElement) {
-//       document.activeElement.blur();
-//     }
-//   });
-// });
-
-// let mode = "artists";
-// const artistsBtn = document.getElementById("artists");
-// const companiesBtn = document.getElementById("companies");
-
-// function () {
-
-// }
-
-// function format(formatMode) {
-//   switch (formatMode) {
-//     case "artists":
-//       return console.log("test1");
-//     case "companies":
-//       return console.log("test2");
-//     default:
-//       return console.log("ничего test1");
-//   }
-// }
 
 let mode = "artists";
 
@@ -87,3 +64,18 @@ companiesBtn.onclick = function () {
   artistsList.style.display = "none";
   companiesList.style.display = "flex";
 };
+
+$(document).ready(function () {
+  var w_height = $(this).height();
+  var slide_width = $(".performance-title").width();
+  var slide_left = slide_width / w_height;
+  var slide_right = slide_width / w_height;
+  $(window).scroll(function (e) {
+    var f_left = slide_left * $(this).scrollTop() * -1;
+    $(".performance-title").css({ left: f_left });
+  });
+  $(window).scroll(function (e) {
+    var f_right = slide_right * $(this).scrollTop() * -1;
+    $(".performance-title-r").css({ right: f_right });
+  });
+});

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,68 +27,91 @@
     <title>SOUNDWAVE PRODIGY</title>
   </head>
   <body>
-    <video muted autoplay loop class="video-bg">
-      <source
-        class="header-video"
-        src="video/hero_video.mp4"
-        type="video/mp4"
-      />
-    </video>
-    <header>
-      <div class="container">
-        <div class="header__block">
-          <h3 class="header-title">Медиахолдинг SOUNDWAVE PRODIGY</h3>
-          <span class="header-text"
-            >Производим медиаконтент, осуществляем его лицензирование и
-            продвижение на территории РФ, стран СНГ и за рубежом</span
-          >
-        </div>
-        <div class="header__block">
-          <a
-            onClick="slowScroll('.feedback')"
-            class="btn modal-button"
-            type="button"
-            data-toggle="modal"
-            data-target="#mainModal"
-          >
-            Обсудить проект
-          </a>
-          <navbar class="header__navbar">
-            <a
-              onClick="slowScroll('.hero')"
-              href="#hero"
-              class="btn header__navbar-button"
-              >Сотрудничество</a
-            >
-            <a
-              onClick="slowScroll('.services')"
-              href="#hero"
-              class="btn header__navbar-button"
-              >Услуги</a
-            >
-            <a
-              onClick="slowScroll('.feedback')"
-              href="#hero"
-              class="btn header__navbar-button"
-              >Контакты</a
-            >
-          </navbar>
-        </div>
-      </div>
-    </header>
     <main>
       <section class="hero">
-        <div class="hero-container">
-          <h3 class="hero-title">Для тех, кто хочет быть успешным</h3>
-        </div>
-        <div class="animation">
-          <img src="img/logo.png" alt="" />
-          <span class="animation-text">Команда экспертов</span>
+        <video muted autoplay loop class="video-bg hero-video">
+          <source
+            class="header-video"
+            src="video/hero_video.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="hero__container container">
+          <div class="hero__block">
+            <h2 class="hero__block-title">Медиахолдинг SOUNDWAVE PRODIGY</h2>
+            <span class="hero__block-text"
+              >Производим медиаконтент, осуществляем его лицензирование и
+              продвижение на территории РФ, стран СНГ и за рубежом</span
+            >
+          </div>
+          <div class="hero__block">
+            <a
+              href="#"
+              onClick="slowScroll('.feedback')"
+              class="hero__block-link"
+              >Обсудить проект</a
+            >
+            <navbar class="hero__navbar"
+              ><a
+                onClick="slowScroll('.partners')"
+                href="#partners"
+                class="hero__navbar-link"
+                >Сотрудничество</a
+              ><a
+                onClick="slowScroll('.services')"
+                href="#services"
+                class="hero__navbar-link"
+                >Услуги</a
+              ><a
+                onClick="slowScroll('.feedback')"
+                href="#feedback"
+                class="hero__navbar-link"
+                >Контакты</a
+              ></navbar
+            >
+          </div>
         </div>
       </section>
-
+      <section class="performance">
+        <h2 class="performance-quote">Для тех, кто хочет быть успешным</h2>
+        <div class="performance__container">
+          <h3 class="performance-title">
+            команда экспертов команда экспертов команда экспертов команда
+            экспертов команда экспертов команда экспертов команда экспертов
+            команда экспертов команда экспертов команда экспертов
+          </h3>
+          <h3 class="performance-title-r">
+            фокус на сервисе фокус на сервисе фокус на сервисе фокус на сервисе
+            фокус на сервисе фокус на сервисе фокус на сервисе фокус на сервисе
+          </h3>
+          <h3 class="performance-title">
+            смелые решения смелые решения смелые решения смелые решения смелые
+            решения смелые решения смелые решения смелые решения смелые решения
+            смелые решения
+          </h3>
+          <h3 class="performance-title-r">
+            эффективные методы эффективные методы эффективные методы эффективные
+            методы эффективные методы эффективные методы эффективные методы
+            эффективные методы
+          </h3>
+          <h3 class="performance-title">
+            индивидуальный подход индивидуальный подход индивидуальный подход
+            индивидуальный подход индивидуальный подход индивидуальный подход
+          </h3>
+          <h3 class="performance-title-r">
+            широкий спект услуг широкий спект услуг широкий спект услуг широкий
+            спект услуг широкий спект услуг широкий спект услуг широкий спект
+            услуг
+          </h3>
+          <h3 class="performance-title">
+            инвестиции в проекты инвестиции в проекты инвестиции в проекты
+            инвестиции в проекты инвестиции в проекты инвестиции в проекты
+            инвестиции в проекты
+          </h3>
+        </div>
+      </section>
       <section class="partners">
-        <h3 class="partners__title">Сотрудничество</h3>
+        <h2 class="partners__title">Сотрудничество</h2>
         <div class="slider__partners">
           <div class="slider__item">
             <img
@@ -316,9 +339,10 @@
       </section>
       <section>
         <div class="services">
-          <div class="services__container">
+          <div class="services__container d-flex flex-wrap">
+            <h3 class="services__title">Услуги</h3>
             <button class="services-button" id="artists">Артистам</button>
-            <h2 class="services__title">Услуги</h2>
+            <h3 class="services__title-b">Услуги</h3>
             <button class="services-button" id="companies">Компаниям</button>
           </div>
           <div class="services__list artists__list container flex-wrap">
