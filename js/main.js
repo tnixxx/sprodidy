@@ -12,16 +12,16 @@ function slowScroll(id) {
 $(document).ready(function () {
   $(".slider__partners").slick({
     arrows: false,
-    // draggable: false,
+    draggable: true,
     infinite: true,
     centerMode: true,
     // easing: "ease",
     slidesToShow: 5,
-    slidesToScroll: 0,
-    speed: 10000,
+    slidesToScroll: 3,
+    // speed: 10000,
     // autoplay: true,
     // autoplaySpeed: 0,
-    cssEase: "linear",
+    // cssEase: "linear",
     // swipe: true,
     responsive: [
       {

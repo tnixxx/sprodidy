@@ -41,7 +41,7 @@ a:hover {
   color: white !important;
 }
 
-body::after {
+/* body::after {
   animation: grain 8s steps(10) infinite;
   background-image: url("https://grainy-gradients.vercel.app/noise.svg");
   content: "";
@@ -51,7 +51,7 @@ body::after {
   top: -110%;
   opacity: 0.15;
   position: fixed;
-}
+} */
 
 @keyframes grain {
   0%,
