@@ -11,59 +11,54 @@ function slowScroll(id) {
 
 $(document).ready(function () {
   $(".slider__partners").slick({
-    arrows: false,
-    draggable: true,
-    infinite: true,
-    centerMode: true,
-    // easing: "ease",
-    slidesToShow: 5,
-    slidesToScroll: 3,
-    // speed: 10000,
     // autoplay: true,
-    // autoplaySpeed: 0,
-    // cssEase: "linear",
-    // swipe: true,
-    responsive: [
-      {
-        breakpoint: 1700,
-        settings: {
-          slidesToShow: 4,
-        },
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 1,
-          speed: 100000,
-        },
-        breakpoint: 800,
-        settings: {
-          speed: 100000,
-          slidesToShow: 1,
-        },
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
+    arrows: false,
+    infinite: true,
+    draggable: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 1000,
+    // responsive: [
+    //   {
+    //     breakpoint: 1700,
+    //     settings: {
+    //       slidesToShow: 4,
+    //     },
+    //     breakpoint: 1400,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       speed: 100000,
+    //     },
+    //     breakpoint: 800,
+    //     settings: {
+    //       speed: 100000,
+    //       slidesToShow: 1,
+    //     },
+    //     breakpoint: 700,
+    //     settings: {
+    //       slidesToShow: 1,
+    //     },
+    //   },
+    // ],
   });
 });
 
-let mode = "artists";
+// let mode = "artists";
 
-const artistsBtn = document.getElementById("artists");
-const companiesBtn = document.getElementById("companies");
+// const artistsBtn = document.getElementById("artists");
+// const companiesBtn = document.getElementById("companies");
 
-const artistsList = document.querySelector(".artists__list");
-const companiesList = document.querySelector(".companies__list");
-artistsBtn.onclick = function () {
-  artistsList.style.display = "flex";
-  companiesList.style.display = "none";
-};
+// const artistsList = document.querySelector(".artists__list");
+// const companiesList = document.querySelector(".companies__list");
+// artistsBtn.onclick = function () {
+//   artistsList.style.display = "flex";
+//   companiesList.style.display = "none";
+// };
 
-companiesBtn.onclick = function () {
-  artistsList.style.display = "none";
-  companiesList.style.display = "flex";
-};
+// companiesBtn.onclick = function () {
+//   artistsList.style.display = "none";
+//   companiesList.style.display = "flex";
+// };
 
 $(document).ready(function () {
   var w_height = $(this).height();
