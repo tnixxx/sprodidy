@@ -15,31 +15,24 @@ $(document).ready(function () {
     arrows: false,
     infinite: true,
     draggable: true,
+    centerMode: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 1000,
-    // responsive: [
-    //   {
-    //     breakpoint: 1700,
-    //     settings: {
-    //       slidesToShow: 4,
-    //     },
-    //     breakpoint: 1400,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       speed: 100000,
-    //     },
-    //     breakpoint: 800,
-    //     settings: {
-    //       speed: 100000,
-    //       slidesToShow: 1,
-    //     },
-    //     breakpoint: 700,
-    //     settings: {
-    //       slidesToShow: 1,
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });
 
