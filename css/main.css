@@ -61,7 +61,11 @@ span {
   font-family: "Tilda", serif;
 }
 
-/* body::after {
+body {
+  z-index: 1;
+}
+
+body::after {
   animation: grain 8s steps(10) infinite;
   background-image: url("https://grainy-gradients.vercel.app/noise.svg");
   content: "";
@@ -69,9 +73,10 @@ span {
   width: 300%;
   left: -100%;
   top: -110%;
-  opacity: 0.15;
+  opacity: 0.1;
+  z-index: -1;
   position: fixed;
-} */
+}
 
 @keyframes grain {
   0%,
@@ -200,7 +205,8 @@ header {
 
 .performance {
   margin-top: 20px;
-  height: 100vh;
+  border: none !important;
+  /* height: 100vh; */
 }
 
 .performance__container {
@@ -214,7 +220,7 @@ header {
   font-size: 60px;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 2px solid white;
+  /* border-bottom: 2px solid white; */
 }
 
 .performance-title {
@@ -329,7 +335,6 @@ header {
 }
 
 .streaming__container img {
-  max-width: 150px;
   padding: 15px;
   mix-blend-mode: luminosity;
 }
@@ -357,6 +362,7 @@ header {
 
 .services__list {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .services__list-item {
@@ -557,6 +563,9 @@ footer span {
   padding-left: 10px;
 }
 
+@media (max-width: 1823px) {
+}
+
 @media (max-width: 1700px) {
   .slider__item-img {
     max-width: 280px;
@@ -614,9 +623,7 @@ footer span {
   .slider__item-img {
     max-width: 290px;
   }
-  .streaming img {
-    max-width: 120px;
-  }
+
   /* .streaming img {
     max-width: 120px;
   } */
@@ -671,9 +678,9 @@ footer span {
     display: flex;
     flex-direction: column;
   }
-  .performance {
+  /* .performance {
     margin-top: 50px;
-  }
+  } */
   .performance h3 {
     font-size: 50px;
   }
@@ -735,8 +742,9 @@ footer span {
 
 /* Queries  */
 
-.performance {
+.performance__container {
   display: none;
+  height: 100px !important;
 }
 
 .partners {

@@ -87,7 +87,7 @@
         <h2 class="performance-quote wow animate__animated animate__fadeIn">
           Для тех, кто хочет быть услышанным
         </h2>
-        <div class="performance__container">
+        <!-- <div class="performance__container">
           <h3 class="performance-title">
             команда экспертов команда экспертов команда экспертов команда
             экспертов команда экспертов команда экспертов команда экспертов
@@ -121,7 +121,7 @@
             инвестиции в проекты инвестиции в проекты инвестиции в проекты
             инвестиции в проекты
           </h3>
-        </div>
+        </div> -->
       </section>
       <section class="partners">
         <h2 class="partners__title wow animate__animated animate__fadeInDown">
@@ -194,13 +194,13 @@
             <span class="slider__item-link">roully</span>
           </a>
           <a href="https://music.yandex.ru/artist/707574" class="slider__item">
-            <img src="img/partners/ISMA.webp" alt="" class="slider__item-img" />
+            <img src="img/partners/isma.webp" alt="" class="slider__item-img" />
             <span class="slider__item-link">ISMA</span>
           </a>
-          <a href="https://music.yandex.ru/artist/" class="slider__item">
+          <!-- <a href="https://music.yandex.ru/artist/" class="slider__item">
             <img src="img/partners/hali.webp" alt="" class="slider__item-img" />
             <span class="slider__item-link">HALI</span>
-          </a>
+          </a> -->
           <a
             href="https://music.yandex.ru/artist/23306756"
             class="slider__item"
@@ -237,29 +237,29 @@
           </a>
         </div>
         <section class="streaming">
-          <div class="container streaming__container col-xl-12">
-            <img class="" src="img/streaming/s1.png" alt="" /><img
-              class=""
+          <div class="container streaming__container">
+            <img class="col-xl-1" src="img/streaming/s1.png" alt="" /><img
+              class="col-xl-1"
               src="img/streaming/s2.png"
               alt=""
-            /><img class="" src="img/streaming/s3.png" alt="" /><img
-              class=""
+            /><img class="col-xl-1" src="img/streaming/s3.png" alt="" /><img
+              class="col-xl-1"
               src="img/streaming/s4.png"
               alt=""
-            /><img class="" src="img/streaming/s5.png" alt="" /><img
-              class=""
+            /><img class="col-xl-1" src="img/streaming/s5.png" alt="" /><img
+              class="col-xl-1"
               src="img/streaming/s6.png"
               alt=""
-            /><img class="" src="img/streaming/s7.png" alt="" /><img
-              class=""
+            /><img class="col-xl-1" src="img/streaming/s7.png" alt="" /><img
+              class="col-xl-1"
               src="img/streaming/s8.png"
               alt=""
-            /><img class="" src="img/streaming/s9.png" alt="" /><img
-              class=""
+            /><img class="col-xl-1" src="img/streaming/s9.png" alt="" /><img
+              class="col-xl-1"
               src="img/streaming/s10.png"
               alt=""
-            /><img class="" src="img/streaming/s11.png" alt="" /><img
-              class=""
+            /><img class="col-xl-1" src="img/streaming/s11.png" alt="" /><img
+              class="col-xl-1"
               src="img/streaming/s12.png"
               alt=""
             />
@@ -332,14 +332,17 @@
                 материала для размещения в плейлисты</span
               >
             </div>
-            <div class="services__list-item col-xl-4">
+            <div
+              onClick="slowScroll('.feedback')"
+              href="#feedback"
+              class="services__list-item col-xl-4"
+            >
               <h4 class="services__list-item-title">
                 Монетизация деятельности артистов
               </h4>
               <span class="services__list-item-text"
-                >Взаимодействия с музыкальными и видео сервисами, медиа
-                холдингами, официальными общественными организациями по
-                монетизации контента и сбору авторского вознаграждения</span
+                >Сбор вознаграждений для артистов по смежным и авторским
+                правам</span
               >
             </div>
             <div class="services__list-item col-xl-4">
@@ -522,11 +525,58 @@
             </div>
             <div class="feedback__block">
               <p class="feedback__block-text">Как Вы узнали про нас?</p>
-              <input
+              <!-- <input
                 type="text"
                 class="form-control feedback__block-input"
                 placeholder=""
-              />
+              /> -->
+              <div class="feedback__block">
+                <select id="inputState" class="form-select">
+                  <option selected>Выбрать...</option>
+                  <option>По рекомендации</option>
+                  <option>Из открытых источников</option>
+                </select>
+              </div>
+            </div>
+            <div class="feedback__block">
+              <p class="feedback__block-text">Предпочтительный способ связи:</p>
+              <div class="form-control form-container">
+                <div class="form-check mb-3">
+                  <input
+                    class="form-check-input feedback__block-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Звонок
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input
+                    class="form-check-input feedback__block-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Соц. сети
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input feedback__block-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault3"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    Email
+                  </label>
+                </div>
+              </div>
             </div>
             <button class="button feedback__form-button">Отправить</button>
           </form>
